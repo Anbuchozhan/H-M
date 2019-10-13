@@ -2,23 +2,28 @@ function validate() {
 	var t0 = performance.now();
 	 num = document.getElementById("Number").value;
 	 
+	 //-----Null Value Check----------------
 	if (num == '') {
 		alert('Please enter a valid Input. No value is entered to sort');
 		return false;
 	} 
 	
 
+	//------Sorting & Other Validations---------
 	else if(num.split(",").length>1){
 		num1=num.split(",");
 		for(k=0;k<num1.length;k++){
+			//--------NUmeric value check
 			if(isNaN(num1[k])){
 				alert('Please enter a valid Input.Entered set contain Non numeric value & it is '+num1[k]);
 				return false;
 			}
+			
 			if(num1[k] == ''){
 				alert('Please enter a valid Input. Entered input has commas')
 				return false;
 			}
+			//-------Range Check between 1 and 100---------
 			if(parseInt(num1[k])>100 || num1[k]<1){
 				alert('Please enter a value between 1 and 100 to sort. Out of range value given in input is '+num1[k]);
 				return false
@@ -50,6 +55,7 @@ function validate() {
 		
 		
 		}
+	//-------Check on single number/Character check---------
 	else if(num.split(",").length==1){
 		if(isNaN(num)){
 		alert('Please enter numeric value. Entered value is '+num);
