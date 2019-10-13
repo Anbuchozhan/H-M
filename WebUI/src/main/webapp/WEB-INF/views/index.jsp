@@ -26,6 +26,21 @@
          </td>
           <td><input type="submit" value="Sort"></td>
         </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        <td>//------------Instructions for Input---------//</td>
+        </tr>
+        <tr>
+        <td>* Enter Number between 1 & 100</td>
+        </tr>
+        <tr>
+        <td>* Input format should be numbers delimited by comma, for example (2,5,6)</td>
+        <tr>
        <!--   <tr>
         <td>Sorted value is</td>
         <td><input type="text" name="Sorted" disabled="disabled" value="${name}"/></td>
